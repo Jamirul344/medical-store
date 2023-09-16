@@ -495,7 +495,6 @@ footer .footer-section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 25px;
   background-color: rgba(0, 0, 0, 0.692);
   padding: 10px;
   
@@ -507,25 +506,22 @@ footer .footer-section {
   justify-content: space-between;
   grid-template-columns: repeat(4, 1fr);
   text-align: left;
+  gap: 50px;
 }
 
 @media screen and (max-width: 756px) {
   .footer-content {
     grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    gap: 10px;
+    
   }
+  .content h3,h2{
+    padding-top: 15px;
+  }
+  
 }
 
-/* .content {
-  width: 100%;
-  padding: 15px;
-
-} */
-
-@media screen and (min-width:756px) {
-  .content {
-    /* width: 350px; */
-  }
-}
 
 .content h3 {
   display: block;
@@ -569,7 +565,7 @@ li {
 .content h3::after {
   content: " ";
   position: absolute;
-  width: 30px;
+  width: 50px;
   height: 2px;
   background-color: #00d2d3;
   bottom: -4px;
