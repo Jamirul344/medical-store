@@ -182,6 +182,7 @@ main #first-container {
     flex-direction: column;
     .hide-bg{
       width: 300px;
+      object-fit: cover;
     }
   }
 }
